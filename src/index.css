@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeInSmooth 0.8s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+
+@font-face {
+  font-family: "overpass";
+  src: url("../public/OverpassMono-Medium.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../public/FuturaCyrillicMedium.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
